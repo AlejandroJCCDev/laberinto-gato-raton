@@ -32,7 +32,7 @@ def mostrar_tablero(tablero, pos_raton, pos_gato):
         print(linea)
     print()
 
-# --- Movimiento y lógica de juego ---
+
 def movimientos_validos(posicion):
     fila, col = posicion
     opciones = []
@@ -73,7 +73,7 @@ def jugar():
     pos_raton = POS_INICIAL_RATON
     pos_gato = POS_INICIAL_GATO
 
-    # Elección de personaje
+  
     while True:
         eleccion = input("¿Quieres controlar al gato o al ratón? (gato/raton): ").strip().lower()
         if eleccion in ["gato", "raton"]:
@@ -92,7 +92,7 @@ def jugar():
         if juego_terminado(pos_raton, pos_gato, turno):
             break
 
-        # Movimiento del ratón
+        
         if turno == 1:
             pos_raton = mover_raton_aleatorio(pos_raton)
         else:
@@ -103,7 +103,7 @@ def jugar():
         if juego_terminado(pos_raton, pos_gato, turno):
             break
 
-# --- Algoritmo Minimax para el ratón ---
+# --- Algoritmo Minimax 
 def minimax_raton(pos_raton, pos_gato, profundidad):
     if pos_raton == pos_gato:
         return -1000, pos_raton
@@ -124,7 +124,7 @@ def minimax_raton(pos_raton, pos_gato, profundidad):
             mejor_movimiento = nueva_pos
     return mejor_valor, mejor_movimiento
 
-# --- Algoritmo Minimax para el gato ---
+
 def minimax_gato(pos_gato, pos_raton, profundidad):
     if pos_gato == pos_raton:
         return 1000, pos_gato
@@ -148,4 +148,5 @@ def minimax_gato(pos_gato, pos_raton, profundidad):
     return mejor_valor, mejor_movimiento
 
 if __name__ == "__main__":
+
     jugar()
