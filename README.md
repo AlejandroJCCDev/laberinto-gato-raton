@@ -2,20 +2,20 @@
 
 Simulador inteligente de persecución usando el algoritmo Minimax en Python puro.
 
----
+
 
 ## ¿Qué es este proyecto?
 
 Un juego donde el ratón y el gato se enfrentan en un tablero bidimensional. El objetivo del ratón es escapar, mientras que el gato intenta atraparlo. Ambos evolucionan: primero se mueven de forma simple, luego aplican estrategias inteligentes con el algoritmo Minimax.
 
----
+
 
 ## Estructura del proyecto
 
 - **`minimax_lab.py`**: Código principal del juego.
 - **`README.md`**: Explicación del reto, proceso, aprendizajes y cómo ejecutar el juego.
 
----
+
 
 ## Proceso y funcionamiento
 
@@ -24,7 +24,7 @@ Un juego donde el ratón y el gato se enfrentan en un tablero bidimensional. El 
 - El gato también evoluciona: primero usa movimiento simple, luego usa Minimax para predecir y acorralar al ratón.
 - El juego termina si el gato atrapa al ratón o si el ratón escapa tras X turnos.
 
----
+
 
 ## "Aha Moments" y aprendizajes
 
@@ -37,7 +37,6 @@ Durante el desarrollo aprendí y enfrenté varios retos interesantes:
 - **Interfaz y jugabilidad**: Mejoré la lógica para que el usuario pueda elegir qué personaje controlar y la visualización del tablero para mayor claridad.
 - **Iteración y testing**: Realicé pruebas con diferentes tamaños de tablero y situaciones, lo que ayudó a pulir la lógica y entender mejor el algoritmo Minimax.
 
----
 
 ## Problemas enfrentados y cómo los resolví
 
@@ -45,7 +44,7 @@ Durante el desarrollo aprendí y enfrenté varios retos interesantes:
 - **Condiciones de parada poco claras**: Definí claramente los casos de fin del juego para evitar bucles.
 - **Errores en la visualización**: Ajusté varias veces cómo se imprime el tablero para que sea entendible y útil.
 
----
+
 
 ## Cómo ejecutar el juego
 
@@ -57,7 +56,7 @@ Durante el desarrollo aprendí y enfrenté varios retos interesantes:
    python minimax_lab.py
    ```
 
----
+
 
 ## Bonus opcionales
 
@@ -67,7 +66,7 @@ Si tienes tiempo o quieres experimentar, puedes agregar:
 - Visualización mejorada del tablero en consola.
 - Elegir quién quieres ser (gato o ratón).
 
----
+
 
 ## Reflexión final
 
